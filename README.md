@@ -2,10 +2,10 @@ Data Management Coursework
 SU26: Data Management in R (8403)
 Antonio Gonzalez
 
-# data-management-coursework
-R and data management coursework covering data dictionaries, CRF critique, and statistical analysis
+About This Repository
+This repository contains coursework from SU26: Data Management in R (8403), a graduate-level course covering data management principles, data collection form design, data dictionary creation, and statistical analysis using R.
 
-Data Collection Forms, Data Dictionaries & R Analysis
+Assignment 2 — Data Collection Forms, Data Dictionaries & R Analysis
 Files
 FileDescriptionGonzalez_hw2_critique.docxCritique of a Cancer Abstraction Form (CRF) using data management design guidelinesGonzalez_hw2.xlsxData dictionary for Cancer Abstraction Form and Health Survey Form, plus fabricated data for 5 study participantsGonzalez_hw2_1.RmdR Markdown file importing the dataset and generating descriptive statisticsGonzalez_hw2_1.pdfKnitted PDF output showing R code and results
 Skills Demonstrated
@@ -23,3 +23,5 @@ R / RStudio
 R Markdown
 Microsoft Excel
 Microsoft Word
+
+
