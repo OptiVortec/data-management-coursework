@@ -1,0 +1,64 @@
+---
+title: "Homework Assignment 2"
+author: "Antonio Gonzalez"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+---
+
+# Fundamentals of Data Management - Module 2
+
+## Step 1: Import the Data
+
+First we load the `readxl` package, which lets R read Excel files.
+Then we import Sheet 3 of our spreadsheet, which contains the 5 fake study participants.
+
+```{r}
+# Load the package that reads Excel files
+library(readxl)
+
+# Import the fake data from Sheet 3 of our Excel file
+# Make sure Gonzalez_hw2.xlsx is in the same folder as this .Rmd file
+data <- read_excel("Gonzalez_hw2.xlsx", sheet = "Fake_Data_5_Participants")
+
+# Print the full dataset so we can confirm it loaded correctly
+print(data)
+```
+
+---
+
+## Step 2: Summary Statistics for Height and Weight
+
+Here we calculate the mean, median, minimum, and maximum
+for both height_cm and weight_kg.
+
+```{r}
+# HEIGHT (cm)
+cat("=== Height (cm) Statistics ===\n")
+cat("Mean:  ", mean(data$height_cm),   "\n")
+cat("Median:", median(data$height_cm), "\n")
+cat("Min:   ", min(data$height_cm),    "\n")
+cat("Max:   ", max(data$height_cm),    "\n")
+
+cat("\n")
+
+# WEIGHT (kg)
+cat("=== Weight (kg) Statistics ===\n")
+cat("Mean:  ", mean(data$weight_kg),   "\n")
+cat("Median:", median(data$weight_kg), "\n")
+cat("Min:   ", min(data$weight_kg),    "\n")
+cat("Max:   ", max(data$weight_kg),    "\n")
+```
+
+---
+
+## Step 3: Print Rows 2 and 3
+
+Here we print only rows 2 and 3 from the dataset.
+
+```{r}
+# Print rows 2 and 3 (all columns)
+cat("=== Rows 2 and 3 ===\n")
+print(data[2:3, ])
+```
