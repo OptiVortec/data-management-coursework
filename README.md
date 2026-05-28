@@ -1,3 +1,7 @@
+Data Management Coursework
+SU26: Data Management in R (8403)
+Antonio Gonzalez
+
 # data-management-coursework
 R and data management coursework covering data dictionaries, CRF critique, and statistical analysis
 
